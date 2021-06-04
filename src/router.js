@@ -11,15 +11,7 @@ export default class RouterTask extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Router>
-          <Switch>
-            <Route path="/" exact>
-              <Redirect to="/to-do-list" />
-            </Route>
-            <Route path="/to-do-list" component={ToDoApp} />
-            <Route path="/user/:id" component={User} />
-          </Switch>
-        </Router>
+        <ToDoApp />
       </React.Fragment>
     );
   }
